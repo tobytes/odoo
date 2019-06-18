@@ -83,7 +83,7 @@ options.registry.slider = options.Class.extend({
         // clone the best candidate from template to use new features
         var $snippets = this.buildingBlock.$snippets;
         //since saas-6, all snippets must start by s_
-        var selection = this.$target.closest('[class*="s_"');
+        var selection = this.$target.closest('[class*="s_"]');
         if (_.isUndefined(selection)) {
             var point = 0;
             var className = _.compact(this.$target.attr("class").split(" "));
